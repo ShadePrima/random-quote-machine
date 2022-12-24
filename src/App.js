@@ -69,21 +69,21 @@ function App() {
           <h3 id='author'>{quote.name}</h3>
         </div>
         <div>
-          <button id='twiter'>
-            <a
-              id='tweet-quote'
-              target='_blank'
-              rel='noreferrer'
-              href='http://twitter.com/intent/tweet'
-            >
+          <a
+            id='tweet-quote'
+            target='_blank'
+            rel='noreferrer'
+            href='http://twitter.com/intent/tweet'
+          >
+            <button id='twiter'>
               <i className='fab fa-twitter'></i>
-            </a>
-          </button>
-          <button id='timblr'>
-            <a href='https://www.tumblr.com' rel='noreferrer'>
+            </button>
+          </a>
+          <a href='https://www.tumblr.com' target='_blank' rel='noreferrer'>
+            <button id='timblr'>
               <i className='fab fa-tumblr'></i>
-            </a>
-          </button>
+            </button>
+          </a>
 
           <button id='new-quote' onClick={generateQuote}>
             Next Quote
